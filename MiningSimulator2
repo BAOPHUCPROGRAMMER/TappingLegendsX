@@ -1,0 +1,549 @@
+
+--Startup
+if game.PlaceId == 9551640993 then
+
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "XRHub Premium", HidePremium = false, IntroText = "XRHub Premium", SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+   --Notifications
+    OrionLib:MakeNotification({
+        Name = "Loaded!",
+        Content = "XRHub Premium",
+        Time = 3
+    })
+    
+    --Main
+    local Main = Window:MakeTab({
+        Name = "Main",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    Main:AddButton({
+        Name = "Auto-Claim Pass",
+        Callback = function()
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(1,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(1,false)	
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(2,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(2, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(3,true)	
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(3, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(4,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(4,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(5,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(5,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(6,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(6,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(7,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(7,false)	
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(8,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(8, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(9,true)	
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(9, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(10,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(10,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(10,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(10,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(11,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(11,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(12,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(12,false)	
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(13,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(13, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(14,true)	
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(14, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(15,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(15,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(16,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(16,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(17,true)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(17,false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(18,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(18,false)	
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(19,true)
+            wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(19, false)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(20,true)	
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimMiningPassReward:FireServer(20, false)
+    
+        end
+    })
+    
+    Main:AddButton({
+        Name = "Auto-Claim Quest Rewards",
+        Callback = function()
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Ultra Excavator")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Pro Excavator")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Super Excavator")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Excavator")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Ore Hunter")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Ore Searcher")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Ore Specialist")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Ore Professional")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Ore Obsession")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Pro Hatcher")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Super Hatcher")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.ClaimQuestReward:FireServer("Legendary Hatcher")
+    
+        end
+    })
+    
+    Main:AddButton({
+        Name = "Buy ALL Boosts (May need to spam)",
+        Callback = function()
+            game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("Omega Lucky",1)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("Omega Lucky",2)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("Super Lucky",1)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("Super Lucky",2)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("Lucky",1)
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Events.BuyBoost:FireServer("Lucky",2)
+    
+        end
+    })
+    
+    Main:AddParagraph("Info on buying all boosts","this will not buy the currency boosts")
+    
+    
+    Main:AddButton({
+        Name = "Auto-Open ALL Crates",
+        Callback = function()
+            while wait(0.5) do
+    game:GetService("ReplicatedStorage").Events.OpenCrate:FireServer("Season 2 Crate")
+            wait(0.1)
+        game:GetService("ReplicatedStorage").Events.OpenCrate:FireServer("Basic Crate")
+            wait(0.1)
+            game:GetService("ReplicatedStorage").Events.OpenCrate:FireServer("Exotic Crate")
+            wait(0.1)
+            game:GetService("ReplicatedStorage").Events.OpenCrate:FireServer("Rare Crate")
+            wait(0.1)
+            game:GetService("ReplicatedStorage").Events.OpenCrate:FireServer("Patriotic Crate")
+            wait(0.1)
+        end
+    end
+    })
+    
+    --Auto Farms
+    local AutoFarm = Window:MakeTab({
+        Name = "Auto Farms",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    AutoFarm:AddButton({
+        Name = "Auto-Craft Factory",
+        Callback = function()
+            while wait(0.5) do
+    game:GetService("ReplicatedStorage").Events.StartFactoryCraft:FireServer("Shells 5",3)
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Events.StartFactoryCraft:FireServer("Shells 5",2)
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Events.StartFactoryCraft:FireServer("Shells 5",1)
+             end
+        end
+    })
+    
+    AutoFarm:AddButton({
+        Name = "Auto-Claim Factory",
+        Callback = function()
+            while wait(0.5) do
+                game:GetService("ReplicatedStorage").Events.ClaimFactoryCraft:FireServer(1)
+                wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimFactoryCraft:FireServer(2)
+                wait(0.5)
+                game:GetService("ReplicatedStorage").Events.ClaimFactoryCraft:FireServer(3)
+             end
+        end
+    })
+    
+    
+    --Eggs
+    local Eggs = Window:MakeTab({
+        Name = "Auto Hatch",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    _G.autoHatch = true
+    _G.selectEgg = "Royalty Egg"
+    _G.selectEgg2 = "Mystery Egg v3"
+    
+    
+    --royalty egg
+    function autoHatch()
+        while _G.autoHatch == true do
+        game:GetService("ReplicatedStorage").Events.OpenEgg:FireServer(_G.selectEgg,true,true)
+        wait(0.5)
+        end
+    end
+    
+    
+    --mystery egg v3
+    function autoHatch()
+        while _G.autoHatch == true do
+        game:GetService("ReplicatedStorage").Events.OpenEgg:FireServer(_G.selectEgg2,true,true)
+        wait(0.5)
+        end
+    end
+    
+    Eggs:AddToggle({
+    Name = "Auto Hatch",
+        Default = false,
+            Callback = function(Value)
+                _G.autoHatch = Value
+                autoHatch()
+        end    
+    })
+            
+    Eggs:AddDropdown({
+        Name = "Eggs",
+        Default = "Royalty Egg",
+        Options = {"Royalty Egg", "Mystery Egg v3"},
+        Callback = function(Value)
+    
+    end
+    })
+    
+    
+    --Teleports
+    local Teleports = Window:MakeTab({
+        Name = "Teleports",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local Section = Teleports:AddSection({
+        Name = "Worlds"
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to The Overworld",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("The Overworld")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Cyber Galaxy",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cyber Galaxy")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Atlantis",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Atlantis")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Gem Genie",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("GemGenie")
+          end
+    })
+    
+    local Section = Teleports:AddSection({
+        Name = "Surfaces"
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to all Surfaces",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Hidden Treasure")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Frozen Depths")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Gloomy Basin")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Molten Core")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("The Underworld")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Crystal Cavern")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cyber Galaxy")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cyber Sewers")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cosmic Abyss")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cyber Core")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Glitched Chasm")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Atlantis")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Rocky Depths")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Sea Shell Shallows")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("City of Gold")
+    wait(1.5)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Dark Coral Depths")
+    wait(1.5)
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Hidden Treasure",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Hidden Treasure")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Frozen Depths",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Frozen Depths")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Gloomy Basin",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Gloomy Basin")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Molten Core",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Molten Core")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to The Underworld",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("The Underworld")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Crystal Cavern",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Crystal Cavern")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Cyber Sewers",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cyber Sewers")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Cosmic Abyss",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cosmic Abyss")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Cyber Core",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Cyber Core")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Glitched Casm",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Glitched Chasm")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Rocky Depths",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Rocky Depths")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Sea Shell Shallows",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Sea Shell Shallows")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to City of Gold",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("City of Gold")
+          end
+    })
+    
+    Teleports:AddButton({
+        Name = "TP to Dark Coral Depths",
+        Callback = function()
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer("Dark Coral Depths")
+          end
+    })
+    
+    --Misc
+    local Misc = Window:MakeTab({
+        Name = "Misc",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    Misc:AddButton({
+        Name = "opening ui's will come later ms2 being annoying idk why",
+        Callback = function()
+    game.StarterGui.ScreenGui.Achievements.Visible = true
+          end
+    })
+    
+    Misc:AddButton({
+        Name = "Auto-Claim Group Benefits",
+        Callback = function()
+            while wait(0.5) do
+    game:GetService("ReplicatedStorage").Functions.ClaimGroupBenefits:InvokeServer()
+          end
+    end
+    })
+    
+    Misc:AddButton({
+        Name = "Redeem All Codes",
+        Callback = function()
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("UltraLucky")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("SuperLucky")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Lucky")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("SuperEvent")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Mystery")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Treasure")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Fishing")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("July4th")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Factory")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Trading")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Gems")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update12")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update11")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update10")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update9")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update8")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update7")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update6")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update5")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update4")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update3")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("update2")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("Release")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").Functions.RedeemCode:InvokeServer("FreeEgg")
+          end
+    })
+    
+    Misc:AddToggle({
+        Name = "Anti-AFK Enabler",
+        Default = true,
+        pcall(function()
+            local vu = game:GetService("VirtualUser")
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+            vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            wait(1)
+            vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            end)
+        end)
+    })
+    
+    
+    --Credits
+    local Credits = Window:MakeTab({
+        Name = "Credits",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    Credits:AddLabel("Created by XRStudio")
+    Credits:AddButton({
+        Name = "Destroy UI",
+        Callback = function()
+    game:GetService("CoreGui").Orion:Destroy()
+          end
+    })
+    
+    
+    OrionLib:Init()
+    
+    end
