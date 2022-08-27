@@ -1,2 +1,2 @@
-# TappingLegendsX
-TappingLegendsX
+# XRHubPremium
+XRHubPremium
